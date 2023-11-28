@@ -22,9 +22,13 @@ const products = [
   { title: "IPhon", unit_price: 10, count: 5 },
   { title: "Service", unit_price: 20, count: 3 },
   { title: "Cosmetic", unit_price: 15, count: 7 },
+  { title: "Bijouterie", unit_price: 30, count: 17 },
+  { title: "CD", unit_price: 25, count: 17 },
+  { title: "Computer", unit_price: 705, count: 9 },
 ];
 
-// Функция для создания карточек товаров
+//*--5 Написать скрипт, который выводит карточки с товарами в интерфейс (на основе массива с объектами. У объекта свойства title, unit_price, count), а внизу выводится итоговая сумма товаров и их количество.
+
 function createProductCard(product) {
   const card = document.createElement("div");
   card.classList.add("card");
@@ -42,6 +46,13 @@ function createProductCard(product) {
   card.append(price);
   card.append(count);
 
+  card.style.border = "3px solid rgb(225, 65, 201)";
+  card.style.borderRadius = "8px";
+  card.style.padding = "16px";
+  card.style.margin = "10px";
+  card.style.width = "200px";
+  card.style.textAlign = "center";
+
   return card;
 }
 
@@ -51,5 +62,3 @@ products.forEach((product) => {
   const card = createProductCard(product);
   container.append(card);
 });
-
-//*--5 Написать скрипт, который выводит карточки с товарами в интерфейс (на основе массива с объектами. У объекта свойства title, unit_price, count), а внизу выводится итоговая сумма товаров и их количество.
