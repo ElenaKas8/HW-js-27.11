@@ -1,0 +1,23 @@
+#existingElement {
+    padding: 30px;
+    border: 2px solid royalblue;
+}
+
+#parentElement {
+    padding: 30px;
+    border: 2px solid rgb(225, 65, 201);
+}
+
+.removeMe {
+    padding: 30px;
+    border: 2px solid rgb(65, 225, 70);
+}
+
+
+
+.products {
+
+    padding: 50px;
+    border: 3px solid rgb(177, 188, 219);
+    background-color: #edaaaa;
+}
