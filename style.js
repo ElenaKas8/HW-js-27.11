@@ -52,6 +52,7 @@ function createProductCard(product) {
   card.style.margin = "10px";
   card.style.width = "200px";
   card.style.textAlign = "center";
+  card.style.boxShadow = "12px 12px 2px 1px rgba(124, 124, 178, 0.2)";
 
   return card;
 }
@@ -61,4 +62,5 @@ const container = document.body;
 products.forEach((product) => {
   const card = createProductCard(product);
   container.append(card);
+  container.style.display = "flex";
 });
